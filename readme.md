@@ -1,6 +1,6 @@
 # Heritage Action Scorecard
 
-A package for fetching data from the Heritage Action Scorecard API.
+A LaravelPHP package for fetching data from the Heritage Action Scorecard API.
 
 ## Usage
 
