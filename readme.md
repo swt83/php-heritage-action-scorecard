@@ -1,6 +1,6 @@
 # Heritage Action Scorecard
 
-A package for fetching data from the Heritage Action Scorecard API.  Read the [documentation](http://heritageactionscorecard.com/api/welcome/docs) for available methods.
+A package for fetching data from the Heritage Action Scorecard API.
 
 ## Usage
 
@@ -11,3 +11,5 @@ $results = HeritageAction\Scorecard::members(array(
     'congress' => 113
 ));
 ```
+
+Read the [documentation](http://heritageactionscorecard.com/api/welcome/docs) for available methods.
