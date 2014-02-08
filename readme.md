@@ -1,13 +1,18 @@
 # Heritage Action Scorecard
 
-A LaravelPHP package for fetching data from the Heritage Action Scorecard API.
+A PHP library for working w/ the Heritage Action Scorecard API.
+
+## Install
+
+Normal install via Composer.
 
 ## Usage
 
 Call the desired method and pass the arguments as a single array:
 
 ```php
-$results = HeritageAction\Scorecard::members(array(
+$results = Travis\HeritageAction\Scorecard::members(array(
+    'apikey' => 'YOUR_API_KEY',
     'congress' => 113
 ));
 ```

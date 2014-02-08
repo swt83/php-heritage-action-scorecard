@@ -1,18 +1,9 @@
 <?php
 
-/**
- * A package for working w/ the Heritage Action Scorecard.
- *
- * @package    Heritage Action Scorecard
- * @author     Scott Travis <scott.w.travis@gmail.com>
- * @link       http://github.com/swt83/php-heritage-action-scorecard
- * @license    MIT License
- */
+namespace Travis\HeritageAction;
 
-namespace HeritageAction;
+class Scorecard {
 
-class Scorecard
-{
     /**
      * Magic method for handling API methods.
      *
@@ -24,16 +15,12 @@ class Scorecard
     {
         // capture arguments
         $args = isset($args[0]) ? $args[0] : array();
-
-        // get api key
-        $apikey = \Config::get('scorecard.apikey');
-        if (!$apikey) trigger_error('Config file not installed properly.');
-        $args['apikey'] = $apikey;
         $args['format'] = 'json';
 
         // set endpoint
         $endpoint = 'http://heritageactionscorecard.com/api/scorecard/'.strtolower($method).'/';
-        foreach ($args as $key => $value) {
+        foreach ($args as $key => $value)
+        {
             $endpoint .= strtolower($key.'/'.$value).'/';
         }
 
@@ -65,4 +52,5 @@ class Scorecard
             return json_decode($response);
         }
     }
+
 }

@@ -1,0 +1,21 @@
+{
+    "name": "travis/heritage-action-scorecard",
+    "description": "A PHP library for working w/ the Heritage Action Scorecard API.",
+    "homepage": "https://github.com/swt83/php-usgov-heritage-scorecard",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Scott Travis",
+            "email": "scott.w.travis@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "Travis\\": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
